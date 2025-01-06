@@ -1,28 +1,30 @@
 {
   "name": "Print",
   "label": "Print",
-  "type": "widget",
   "description": "Widget สำหรับการพิมพ์แผนที่",
+  "type": "widget",
+  "frameworkVersion": "1.12", // ระบุเวอร์ชันที่ตรงกับ ArcGIS Experience Builder Developer Edition
   "framework": "react",
   "version": "1.0.0",
   "author": "Your Name",
-  "dependencies": [
-    "jimu-core",
-    "jimu-arcgis"
-  ],
+  "dependencies": ["jimu-core", "jimu-arcgis"],
   "defaultSize": {
     "width": 400,
     "height": 200
   },
-  "styleFiles": [
-    "src/style.css"
-  ],
-  "hasSettingPage": true,
+  "properties": {
+    "hasSettingPage": true
+  },
   "settingPanel": {
     "position": "right"
   },
-  "useMapWidgetIds": [
-    "mapWidget1"
-  ],
-  "properties": {}
+  "useMapWidgetIds": true, // ใช้ true แทนรายการที่เฉพาะเจาะจง
+  "styleFiles": ["src/style.css"],
+  "i18n": {
+    "messages": {
+      "en": {
+        "widgetLabel": "Print"
+      }
+    }
+  }
 }
