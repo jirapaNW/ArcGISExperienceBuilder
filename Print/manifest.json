@@ -1,6 +1,7 @@
 {
   "name": "Print",
   "label": "Print",
+  "type": "widget",
   "description": "Widget สำหรับการพิมพ์แผนที่",
   "framework": "react",
   "version": "1.0.0",
